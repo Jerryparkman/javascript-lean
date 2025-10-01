@@ -6,6 +6,10 @@
 // flat() In the parameter section of the flat, you can determine the length of the depth, and infinity also
 // isArray <= it checks the type of data which is in array or not
 // from() <= in this we can change our any data into the type of array format
+// at() <= we can use it for taking an any element of the index of the array
+// copywithin <= it copy the elements withing the array from one index to another as it is
+// findlast : Arrname.findlast(element => element > 9); Output: it gives the largest element from the array
+
 
 const A1 = [1,2,3,4,5];
 const A2 = [6,7,8,9,10];
@@ -32,7 +36,7 @@ const allArray = AnotherArray.flat(Infinity);
 // console.log(allArray);
 
 // console.log(Array.isArray('Satrohan sharma'));
-// console.log(Array.from('Satrohan sharma'));
+console.log(Array.from('Satrohan sharma'));
 
 // console.log(Array.from({name: "satrohan"})); //
 
@@ -41,6 +45,6 @@ let score2 = 200;
 let score3 = 300;
 
 const myAll = Array.of(score1, score2, score3);
-console.log(myAll);
+// console.log(myAll);
 
 
