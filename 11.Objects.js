@@ -18,8 +18,15 @@ const MyProfile = {
 
 
 // How to freeze objects
-Object.freeze(MyProfile);
+// Object.freeze(MyProfile);
 MyProfile.age = 21;
 
+MyProfile.greetings = function(){
+    console.log("Hello js user! ");
+}
 
-console.log(MyProfile);
+MyProfile.greetings = function(){
+    console.log(`Hello js user, ${this.name}`);
+}
+console.log(MyProfile.greetings())
+console.log(MyProfile["greetings"]);
