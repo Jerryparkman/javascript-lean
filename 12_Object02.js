@@ -67,17 +67,49 @@ const User = [
 ]
 //  console.log(User[1].id); // The value is accessed from the array which is stored in the form of objects in the object
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); //Output: 'id', 'name', 'IsLoggedIn'
-console.log(Object.keys(User[1])); //Output: 'id', 'email'
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); //Output: 'id', 'name', 'IsLoggedIn'
+// console.log(Object.keys(User[1])); //Output: 'id', 'email'
 
-console.log(Object.values(User[1])); //Output: '2', 'some2@gmail.com'
+// console.log(Object.values(User[1])); //Output: '2', 'some2@gmail.com'
 
 // Entries example
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 
 // hasOwnProperty
-console.log(tinderUser.hasOwnProperty('IsLoggedIn'));
-console.log(tinderUser.hasOwnProperty('name'));
-console.log(tinderUser.hasOwnProperty('email'));
+// console.log(tinderUser.hasOwnProperty('IsLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('name'));
+// console.log(tinderUser.hasOwnProperty('email'));
+
+const course = {
+    Cname: "JsAdvance",
+    CPrize: "999",
+    CInstructor: "Satrohan"
+};
+
+
+const Syllabus = {
+    Cname: "Python",
+    CPrize: "999",
+    CInstructor: "satrohan"
+};
+
+const {Cname} = Syllabus;
+console.log(Cname);
+// Basically we use use this syntax for call the properties of the object
+console.log(course.Cname);
+
+// Now we de-structured the object like this
+
+const {Cname: CN} = course;
+console.log(CN);
+console.log(Cname);
+
+const {CInstructor} = course;
+// console.log(CInstructor);
+
+
+
+
+
