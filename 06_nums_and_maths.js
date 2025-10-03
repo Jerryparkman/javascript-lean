@@ -21,7 +21,15 @@ let Money = 100000;
 
 
 // ***********************Maths*********************
-// abs, round, pi , ceil, floor, sqrt, min, max, random
+// abs
+// round,
+// pi 
+// ceil, 
+// floor, 
+// sqrt, 
+// min, 
+// max, 
+// random
 // console.log(Math);
 
 // abs <= absolute value, it only change negative sigh to positive sigh
