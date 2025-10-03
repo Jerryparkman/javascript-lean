@@ -10,9 +10,10 @@ let number = Number(score);
 let IsLoggedIn = true;
 let InString = Number(IsLoggedIn);
 // console.log(InString);
-let buddy =" hey boy";
+let buddy =123;
 let buddyIntoNumber = Number(buddy);
-// console.log(buddyIntoNumber);
+let buddyIntoString = String(buddy);
+console.log(buddyIntoString);
 
 let boleanEx = true; 
 let boleanIntoString = Number(boleanEx);
@@ -37,8 +38,8 @@ let negValue = -value;
 
 // console.log((1+2) + 3+"2" /2);
 
-console.log(+true);
-console.log(-true);
-console.log(+"");
-console.log("")
+// console.log(+true);
+// console.log(-true);
+// console.log(+"");
+// console.log("")
 
