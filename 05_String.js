@@ -1,7 +1,23 @@
+// String methods
+// charAt()
+// indexOf()
+// startWith()
+// endwith()
+// includes()
+// padStart()
+// padEnd()
+// repeat()
+// replace()
+// slice()
+// substring
+// toUpperCase()
+// toLowerCase()
+// trim()
+// trimStart()
+// trimEnd()
+
 // `` <= string interpolation
 // It is used for making placeholders
-
-
 
 // Method of concatination of two string together
 // This method is know as string interpolationf
