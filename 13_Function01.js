@@ -54,3 +54,4 @@ function getArr(gArr){
 };
 
 console.log(getArr(Arr));
+
