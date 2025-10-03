@@ -18,12 +18,18 @@ function name1(a, b, c, d){
 name1(1,2,3,4);
 
 let preeti = {
-    name: "preeti chaudhari",
+    Firstname: "preeti",
+    Secondname: "choudhari",
     address: 'gaushala',
     relation: "girlfriend",
     from: "6month",
     age: 21,
-    education: "bachlor running"
+    education: "bachlor running",
+    fullName: function(){
+        return this.Firstname + " " + this.Secondname
+    }
 }
-console.log(preeti);
+
+
+console.log(preeti.fullName());
 
