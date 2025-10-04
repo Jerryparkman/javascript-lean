@@ -1,5 +1,6 @@
 // Concept of block scope
 // and global scope
+// Expression
 
 var c = 400;
 
@@ -24,4 +25,20 @@ function one(){
     two();
     // console.log(website);
 }
-one();
+// one();
+
+
+
+
+console.log(add(2))
+function add(num){
+    return num +2
+};
+
+const addTwo = function(value){
+    return value + 5
+};
+
+console.log(addTwo(5))
+
+
