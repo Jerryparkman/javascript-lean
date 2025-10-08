@@ -4,6 +4,10 @@
 // Switch
 // &&
 // ||
+// Nulish coalescing operator 
+// Turney operator
+
+
 
 // const Money = 100;
 
@@ -110,11 +114,36 @@
 // Truthly values
 // true, " ", [], {}, function(){}
 
-let i;
-let j;
-for(i=0;i<5;i++){
-    if(i==3){
-        continue
-    }
-    console.log(i)
-};
+// let i;
+// let j;
+// for(i=0;i<5;i++){
+//     if(i==3){
+//         continue
+//     }
+//     console.log(i)
+// };
+
+// Nulish coalescing operator
+
+var1= 5??10;
+// console.log(var1);
+// expected output: 5
+
+var2= null??10;
+// console.log(var2);
+// Expected output: 10
+
+var3 = null??undefined;
+// console.log(var3);
+// Expected output: undefined
+
+var4= undefined??null??5;
+// console.log(var4);
+// Expected output: 5
+
+// Turnery operator
+// Syntax: Condition ? true: false;
+// Example
+
+let Money=500;
+Money>=500 ? console.log("Allowed to go gaushala"): console.log("Not allowed to go gaushala");

@@ -7,7 +7,7 @@ const value = new Number(500);
 // console.log(value.toFixed(2));
 
 let number = 123.45;
-// console.log(number.toPrecision(4));
+console.log(number.toPrecision(3));
 
 // precision 
 // it gives the calculated value and shorted value and it relay on argument

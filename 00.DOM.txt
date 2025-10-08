@@ -1,0 +1,14 @@
+document.getElementById('id').title
+title.style.backgroundColor: 'green'
+title.innerHTML
+title.textContent
+title.innerText
+
+document.querySelector('h1') //It gives first h1 from the document
+
+
+for selecting Id
+document.querySelector('#title')
+
+for selecting class
+document.querySelector('#heading');

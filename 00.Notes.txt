@@ -1,0 +1,8 @@
+callback function => if the function is callback then it doen't require its name.
+eg. function (){
+
+}
+
+function printMe(item){
+    console.log(item)
+};

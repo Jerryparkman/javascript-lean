@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8"> 
+    <title>
+        DOM learning
+    </title>
+   </head>
+    <body id="body" class="bg-black" style="background-color: #212121;  color: #fff">
+<div class="parent"> 
+    <!-- This comment is required for understanding nodes -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+</div>
+    </body>
+    <script>
+       
+     const parent= document.querySelector('.parent')
+    //  console.log(parent);
+    //  console.log(parent.children[1].innerHTML)
+        for(let i=0; i<parent.children.length; i++){
+            // console.log(parent.children[i].innerHTML)
+        }
+        parent.children[0].style.color = 'Orange'
+        parent.children[2].style.color = 'green'
+        parent.children[3].style.color = 'red'
+        parent.children[1].style.color = 'blue'
+
+        // console.log(parent.firstElementChild.innerHTML)
+        // console.log(parent.lastElementChild.innerHTML)
+
+        const dayOne = document.querySelector('.day');
+        // console.log(dayOne.innerHTML)
+
+        // console.log(dayOne.parentElement.innerHTML);
+        // console.log(dayOne.nextElementSibling.innerHTML);
+
+        console.log("NODES: ", parent.childNodes )
+
+    </script>
+</html>

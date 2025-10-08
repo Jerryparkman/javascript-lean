@@ -77,10 +77,10 @@ const User = [
 // console.log(Object.entries(tinderUser));
 
 
-// hasOwnProperty
-// console.log(tinderUser.hasOwnProperty('IsLoggedIn'));
-// console.log(tinderUser.hasOwnProperty('name'));
-// console.log(tinderUser.hasOwnProperty('email'));
+hasOwnProperty
+// console.log(tinderUser.hasOwnProperty('IsLoggedIn')); output: true
+// console.log(tinderUser.hasOwnProperty('name')); output: true
+// console.log(tinderUser.hasOwnProperty('email')); output: false
 
 const course = {
     Cname: "JsAdvance",
@@ -97,7 +97,7 @@ const Syllabus = {
 
 const {Cname} = Syllabus;
 console.log(Cname);
-// Basically we use use this syntax for call the properties of the object
+// Basically we use this syntax for call the properties of the object
 console.log(course.Cname);
 
 // Now we de-structured the object like this

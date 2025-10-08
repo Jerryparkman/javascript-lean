@@ -45,9 +45,11 @@ myArr.shift();
 // slice, splice
 
 console.log("A",myArr, "Normal array");
-const myn1 = myArr.slice(1,4);
+const myn1 = myArr.slice(1,4); 
+// Expected output: dcd
 
 console.log("B",myn1,"Slice array");
 
 const myn2 = myArr.splice(1,4);
 console.log("C",myn2,"Splice array");
+// Expected output: bcd
