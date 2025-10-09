@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8"> 
+    <title>
+        DOM learning
+    </title>
+   </head>
+    <body id="body" class="bg-black" style="background-color: #212121; color: #fff">
+        <ul class="language" >
+            <li>javascript</li>
+        </ul>
+    </body>
+    <script>
+        // Adding a new in the ul by unoptimized way
+        function addLanguage(language){
+           const li= document.createElement('li');
+            li.innerHTML = `${language}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addLanguage("python");
+        addLanguage("rubi");
+        
+        // Adding a new li in the ul by optimized way 
+        function addOptilang(LangName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(LangName));
+            document.querySelector('.language').appendChild(li);
+        }
+        addOptilang("Java");
+        addOptilang("Cpp");
+
+        // Edit
+       const SecondLang = document.querySelector("li:nth-child(2)");
+    //    SecondLang.innerHTML = "mojo";
+
+    // different approach to edit 
+    const newLi = document.createElement('li');
+    newLi.textContent='Go lang';
+    SecondLang.replaceWith(newLi);
+
+    // different approach to edit
+    const firsLang = document.querySelector("li:first-child");
+    fistLang.outerHTMl = '<li> danger </li>'
+
+    // Remove lists 
+    const RemoveLi = document.querySelector('li:nth-child(3)');
+    RemoveLi.remove();
+    </script>
+</html>
