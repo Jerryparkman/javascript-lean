@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;  color: aliceblue ">
+    <div>
+        <h2>Adventures Images</h2>
+    <ul id="Images">
+        <li ><img width="200px" height="250px" src="https://images.pexels.com/photos/34192229/pexels-photo-34192229.jpeg?_gl=1*1pyrm61*_ga*MTE3NTI2MDI4My4xNzYwMzE3MjY2*_ga_8JE65Q40S6*czE3NjAzMTcyNjUkbzEkZzEkdDE3NjAzMjAyMDMkajYwJGwwJGgw" id="mountain" alt=""></li>
+        <li ><img width="200px" height="250px" src="https://images.pexels.com/photos/29734978/pexels-photo-29734978.jpeg?_gl=1*1vc9shs*_ga*MTE3NTI2MDI4My4xNzYwMzE3MjY2*_ga_8JE65Q40S6*czE3NjAzMTcyNjUkbzEkZzEkdDE3NjAzMjAyNDkkajE0JGwwJGgw" id="River" alt=""></li>
+        <li ><img width="200px" height="250px" src="https://images.pexels.com/photos/29734959/pexels-photo-29734959.jpeg?_gl=1*nsh3ey*_ga*MTE3NTI2MDI4My4xNzYwMzE3MjY2*_ga_8JE65Q40S6*czE3NjAzMTcyNjUkbzEkZzEkdDE3NjAzMjAzNjYkajU5JGwwJGgw" id="Hills"></li>
+        <li ><img width="200px" height="250px" src="https://images.pexels.com/photos/2229887/pexels-photo-2229887.jpeg?_gl=1*1gpqwx3*_ga*MTE3NTI2MDI4My4xNzYwMzE3MjY2*_ga_8JE65Q40S6*czE3NjAzMTcyNjUkbzEkZzEkdDE3NjAzMjA0NjUkajMxJGwwJGgw" id="Glacier" alt=""></li>
+        <li ><img width="200px" height="250px" src="https://images.pexels.com/photos/4905079/pexels-photo-4905079.jpeg?_gl=1*1ytuzuv*_ga*MTE3NTI2MDI4My4xNzYwMzE3MjY2*_ga_8JE65Q40S6*czE3NjAzMTcyNjUkbzEkZzEkdDE3NjAzMjA1MTkkajU5JGwwJGgw" id="Ices" alt=""></li>
+        <li><a href="https://google.com" id="google" style="color: aliceblue;">Google</a></li>
+    </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('Glacier').onclick = function(){
+    //     alert("This is Glacier image");
+    // }
+    
+    // eventObject 
+    // type, timestamp,  preventDefault, target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY,
+    // altkey, ctrlkey, shiftkey, keycode
+
+
+    // // eventPropagation => event bubling = false , event capturing = true,
+//    document.getElementById('Images').addEventListener('click', function(e){
+//    console.log("clicked inside the Ul")
+//    },false);
+//     document.getElementById('Hills').addEventListener('click', function(){
+//     console.log("Hills clicked"); 
+//     },false)
+    
+// if eventPropagation is false then it execute inside to outside like first execute inside <Hills> then execute outside <Images>
+
+//    document.getElementById('Images').addEventListener('click', function(e){
+//    console.log("clicked inside the Ul")
+// //    e.stopPropagation();
+//    },true);
+
+    // document.getElementById('Hills').addEventListener('click', function(e){
+    // console.log("Hills clicked"); 
+    // e.stopPropagation();
+    // },true)
+    // if the eventPropagation is true then first execute outside <Images> then execute inside <HIlls>
+        // if we want to stop propagation then use (e.stopPropagation() method) => it only works in false - eventPropagation()
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     e.preventDefault();
+        //     // e.stopPropagation();
+        //     console.log("google clicked")
+        // },false)
+
+        document.getElementById('Images').addEventListener('click', function(event){
+           if(event.target.tagName ==='IMG'){
+               console.log(event.target.tagName)
+               let removeIt = event.target.parentNode;
+               removeIt.remove();
+               console.log("The content is deleted");
+            }
+        // removeIt.parentNode.removeChild(removeIt);
+        },false)
+
+</script>
+</html> 
