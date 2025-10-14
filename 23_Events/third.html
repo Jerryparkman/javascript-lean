@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The best journey ever</title>
+</head>
+<body>
+    <h1>Javascript journey</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+   <script>
+    let StartNow;
+    const Start = function(){
+       StartNow = setInterval(changing, 2000);
+       function changing(){
+        document.querySelector('#start').innerHTML = "Best experience ever!"
+       }
+    }
+    const Stop = function(){
+        clearInterval(StartNow);
+    }
+
+    document.querySelector('#start').addEventListener('click',Start)
+    document.querySelector('#stop').addEventListener('click',Stop);
+   </script>
+</html>

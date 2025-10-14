@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async learning</title>
+</head>
+<body>
+    <h2>Async journey</h2>
+    <button id="stop"></button>
+</body>
+<script>
+// setTimeout(()=>{
+//     console.log("This is the first line of code!");
+// },2000);
+
+// setInterval(()=>{
+//     console.log("This is the second line of code!")
+// },2000)
+
+// const change = function(){
+//     document.querySelector('h2').innerHTML = "The best js learning journey!"
+// }
+// setInterval(change, 2000);
+
+// const changeAgain = function(){
+//     document.querySelector('h2').innerHTML = "Most valuable experience ever!"
+// }
+// setInterval(changeAgain,3000)
+
+const changeMe = function(){
+    document.querySelector('h2').innerHTML = "The best practice ever!"
+}
+
+const change = setTimeout(changeMe, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+clearTimeout(change);
+console.log("Stopped")
+    })
+
+</script>
+</html>
