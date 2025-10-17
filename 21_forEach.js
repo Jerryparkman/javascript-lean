@@ -24,7 +24,7 @@ function printMe(item){
 // coding.forEach(printMe);
 
 coding.forEach((item, indexOf, coding) =>{
-// console.log(item, indexOf, coding);
+console.log(item, indexOf, coding);
 })
 
 const myCoding = [
