@@ -99,4 +99,6 @@ fetch('https://api.github.com/users/jerrypark')
 }).then((data)=>{
 console.log(data)
 })
-.catch((error)=> console.log(error))
+.catch((error)=> console.log(error)).finally(()=>{
+    console.log("Hey buddy this is one of the best course ever!")
+})
