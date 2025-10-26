@@ -50,3 +50,9 @@ for(const key in Myobject){
     // console.log(`${key} shortcut for ${Myobject[key]}`);
 }
 
+const Arr2= [1,2,3,4,5];
+for(const [key, value] in Arr2){
+    // console.log(`The numbers of array's are ${Numbers}`)
+    console.log(Arr2[key]);
+};
+
